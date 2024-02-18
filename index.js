@@ -41,9 +41,10 @@ const questions = [
     },
 
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Please choose a license for your project',
+        choices: ['Apache', 'BSD Revised', 'BSD Simplified', 'Boost', 'Creative', 'Eclipse', 'GNU', 'GNU Affero', 'GNU Lesser', 'MIT', 'Mozilla', 'No License', 'Unlicense'],
     },
 
     {
