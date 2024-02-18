@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
+const markdown = require('./markdown.js');
 const fs = require('fs');
 
+// Questions
 const questions = [
     {
         type: 'input',
@@ -71,9 +73,10 @@ function init() {
 function writeReadMe(response) {
 
     const fileName = "README.md";
-    const answersString = JSON.stringify(response);
+    const markdownContent = markdown(response);
+    // const answersString = JSON.stringify(response);
 
-    fs.writeFile(fileName, answersString, (err) => {
+    fs.writeFile(fileName, markdownContent, (err) => {
         err ? console.error('Error writing to ' + fileName) : console.log('Answers written to ' + fileName);
     });
 };
