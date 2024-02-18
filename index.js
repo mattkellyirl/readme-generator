@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 
-const readmeQuestions = [
+const questions = [
     {
         type: 'input',
         name: 'title',
@@ -53,10 +54,29 @@ const readmeQuestions = [
         type: 'input',
         name: 'email',
         message: 'Please enter your email address',
-    },
+    }
 ];
 
-inquirer.prompt(readmeQuestions)
-    .then((answers) => { 
-        console.log('Answers:', answers);
+// Initialise application
+function init() {
+
+    inquirer.prompt(questions)
+
+    .then((response) => { 
+        writeReadMe(response);
     })
+};
+
+// Write user preferences to readme.md
+function writeReadMe(response) {
+
+    const fileName = "README.md";
+    const answersString = JSON.stringify(response);
+
+    fs.writeFile(fileName, answersString, (err) => {
+        err ? console.error('Error writing to ' + fileName) : console.log('Answers written to ' + fileName);
+    });
+};
+
+// Call to initialise application
+init();
