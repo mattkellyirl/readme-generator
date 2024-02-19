@@ -75,7 +75,6 @@ function writeReadMe(response) {
 
     const fileName = "README.md";
     const markdownContent = markdown(response);
-    // const answersString = JSON.stringify(response);
 
     fs.writeFile(fileName, markdownContent, (err) => {
         err ? console.error('Error writing to ' + fileName) : console.log('Answers written to ' + fileName);

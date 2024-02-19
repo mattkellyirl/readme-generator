@@ -5,6 +5,8 @@
 ## Description
 This Node.js application is a command line tool that creates a README.md file based on user prompts. It was designed as a faster alternative to creating README files for software repositories. 
 
+To view a live demonstration of this application, please visit this link: https://www.youtube.com/watch?v=dVopQ85Pf_Q 
+
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
