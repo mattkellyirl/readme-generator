@@ -33,9 +33,9 @@ There are no tests associated with this project.
 ## License
 ![License](https://img.shields.io/badge/license-none-lightgrey.svg)
 
-This project not licensed. For more information regarding licences, please visit this link: https://opensource.org/license/
+This project is not licensed. For more information regarding licences, please visit this link: https://opensource.org/license/
 
 ## Questions
-Please feel free to contact me via my GitHub or Email address below for any questions associated with this application:  
+Please feel free to contact me via my GitHub or email below for any questions associated with this application:  
 GitHub: [mattkellyirl](https://github.com/mattkellyirl)  
 Email: mattkellyvisual@gmail.com
